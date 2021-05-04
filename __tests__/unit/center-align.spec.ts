@@ -6,11 +6,7 @@ describe('center align suite test', () => {
 
         const arrayOfText:Array<string> = ['we', 'are', 'going', 'to', 'see', 'if', 'it', 'works', 'ok'];
         const arrayAligned = centerAlign(arrayOfText, 40);
-
-        console.log(arrayAligned);
-
         expect(arrayAligned.length).toBe(40);
-       
 
     });
 

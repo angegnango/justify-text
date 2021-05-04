@@ -14,7 +14,8 @@
   "dependencies": {
     "cors": "^2.8.5",
     "express": "^4.17.1",
-    "jsonwebtoken": "^8.5.1"
+    "jsonwebtoken": "^8.5.1",
+    "ts-dotenv": "^0.8.3"
   },
   "devDependencies": {
     "@types/cors": "^2.8.10",
