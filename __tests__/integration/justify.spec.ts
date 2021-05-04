@@ -1,7 +1,5 @@
 import justify from '../../src/use-cases/justify';
 
-
-
 describe('Justify text suite text', ()=> {
 
     it('should justify the given text', ()=> {
@@ -13,7 +11,7 @@ describe('Justify text suite text', ()=> {
     
         expect(firstLine.length).toBe(lastLine.length);
         expect(firstLine.length).toBe(80);
-        
+
     });
 
 });
