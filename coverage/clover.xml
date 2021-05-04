@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1620128125664" clover="3.2.0">
-  <project timestamp="1620128125664" name="All files">
+<coverage generated="1620154501858" clover="3.2.0">
+  <project timestamp="1620154501858" name="All files">
     <metrics statements="17" coveredstatements="17" conditionals="4" coveredconditionals="4" methods="3" coveredmethods="3" elements="24" coveredelements="24" complexity="0" loc="17" ncloc="17" packages="1" files="2" classes="2"/>
     <file name="center-align.ts" path="/home/sohone/Lab/interviews/technical-test/src/use-cases/center-align.ts">
       <metrics statements="12" coveredstatements="12" conditionals="4" coveredconditionals="4" methods="2" coveredmethods="2"/>
