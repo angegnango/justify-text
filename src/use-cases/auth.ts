@@ -30,5 +30,6 @@ const verifyToken = (token:string) => {
   
 }
 
-const auth = { generateToken, verifyToken }
+const auth = { generateToken, verifyToken };
+
 export default auth;

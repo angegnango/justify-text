@@ -13,7 +13,7 @@ const textFromArray = (words: Array<string>):string => {
 
     let text =''
 
-    for(let i=0; i<words.length; i++) text+=words[i];
+    for(let i=0; i<words.length; i++) text+=words[i]+'\n';
 
     return text.trim();
 }

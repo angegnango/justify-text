@@ -32,7 +32,7 @@ This will expose the service at  `http://localhost:3000`
 
 Coverage are available here 
 
-[coverage/lcov-report/](coverage/lcov-report/)
+![Test coverage](coverage.png)
 
 ---
 

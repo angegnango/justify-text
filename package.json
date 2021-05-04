@@ -1,11 +1,11 @@
 {
   "name": "technical-test",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "index.js",
+  "main": "",
   "scripts": {
     "build": "tsc -p .",
-    "start": "NODE_ENV=dev nodemon -r tsconfig-paths/register src/server/index.ts",
+    "start": "NODE_ENV=dev nodemon -r tsconfig-paths/register src/webserver/index.ts",
     "test": "NODE_ENV=test jest --watchAll --coverage"
   },
   "keywords": [],
