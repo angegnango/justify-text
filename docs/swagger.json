@@ -1,0 +1,127 @@
+{
+    "swagger": "2.0",
+    "info": {
+        "description": "API Documentation",
+        "version": "1.0.0",
+        "title": "Justify Service ",
+        "contact": {
+            "email": "me@gnango.com"
+        },
+        "license": {
+            "name": "Apache 2.0",
+            "url": "http://www.apache.org/licenses/LICENSE-2.0.html"
+        }
+    },
+    "schemes": ["http"],
+    "host": "localhost:3000",
+    "basePath": "/api",
+    "paths" : {
+        "/token" : {
+            "post" : {
+                "summary" : "Get Authorization and authentication",
+                "description": "Generate Json Web Token",
+                "produces": ["application/json"],
+                "consumes": ["application/json"],
+                "parameters": [
+                    {
+                        "email": "body",
+                        "description": "user email",
+                        "required": true
+                    }
+                ],
+                "responses": {
+                    "201": {
+                        "description": "successful operation",
+                        "schema": {
+                            "type": "string",
+                            "items": {
+                                "$ref": "#/definitions/tokenResponse"
+                            }
+                        }
+                    },
+                    "404": {
+                        "description": "Invalid status value",
+                        "schema": {
+                            "$ref": "#/definitions/BadTokenResponse"
+                        }
+                    },
+                    "402": {
+                        "description": "Invalid status value",
+                        "schema": {
+                            "$ref": "#/definitions/TokenUsageResponse"
+                        }
+                    },
+                    "500": {
+                        "description": "successful operation",
+                        "schema": {
+                            "type": "string",
+                            "items": {
+                                "$ref": "#/definitions/MissingResponse"
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/justify" : {
+            "post" : {
+                "summary" : "Justify text",
+                "description": "Apply alignment justify to the given text",
+                "produces": ["text/plain"],
+                "consumes": ["text/plain"],
+                "parameters": [
+                    {
+                        "text": "payload",
+                        "in": "body",
+                        "description": "text to justify",
+                        "required": true,
+                        "type": "string"
+                    }
+                ],
+                "responses": {
+                    "201": {
+                        "description": "successful operation",
+                        "schema": {
+                            "type": "string",
+                            "items": {
+                                "$ref": "#/definitions/justifyResponse"
+                            }
+                        }
+                    },
+                    "400": {
+                        "description": "Invalid status value",
+                        "schema": {
+                            "$ref": "#/definitions/InvalidResponse"
+                        }
+                    }
+                }
+            }
+        }
+    }, 
+    "definitions": {
+        "tokenResponse": {
+            "type": "string"
+        },
+        "BadTokenResponse": {
+            "type": "string"
+            
+        },
+        "TokenUsageResponse": {
+            "type": "string"
+            
+        },
+        "MissingResponse": {
+            "type": "string"
+            
+        },
+        "justifyResponse": {
+            "type": "string"
+            
+        },
+        "InvalidResponse": {
+            "type": "string"
+            
+        }
+
+    }
+}

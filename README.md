@@ -55,6 +55,9 @@ Content-Type: text/json\
 Payload: { email: useremail@email.com }
 
 
-
 ---
+
+## Basic Api Docs
+
+Swagger definitions available here  `http://localhost:3000/api/docs` 
 
