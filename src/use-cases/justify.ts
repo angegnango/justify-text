@@ -5,9 +5,6 @@ import leftAlign from './left-align';
 
 
 const justify = (text:string, limit:any= env.MAX_LENGTH):Array<string> => {
-    
-    console.log(`we got this payload `+ text)
-    console.log(typeof(text))
 
     if(typeof(text)=='object') text = JSON.stringify(text);
     

@@ -54,10 +54,20 @@ Method : POST\
 Content-Type: text/json\
 Payload: { email: useremail@email.com }
 
+---
+## Output
+
+Output from input.txt 
+
+![throw postman](result.png)
+
 
 ---
 
-## Basic Api Docs
+## Basic Api Documentation with swagger
 
-Swagger definitions available here  `http://localhost:3000/api/docs` 
+Swagger definitions available here  `http://localhost:3000/api/docs`
+
+
+![Api Documentations ](swagger.png) 
 
